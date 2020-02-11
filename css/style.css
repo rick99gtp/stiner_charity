@@ -177,4 +177,63 @@ html {
 .our-mission p:nth-child(2) {
   margin-bottom: 2em;
 }
+
+.how-you-can-help {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  color: #fff;
+  background: url("../images/how-you-can-help.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.how-you-can-help .how-inner {
+  width: 50vw;
+  padding: 5em;
+}
+
+.how-you-can-help .how-inner h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: .5em;
+}
+
+.how-you-can-help .how-inner p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15em;
+  line-height: 1.75;
+  width: 30em;
+}
+
+.how-you-can-help .how-inner p:nth-child(2) {
+  margin-bottom: 2em;
+}
+
+.how-you-can-help .how-inner a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d84e41;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.how-you-can-help .how-inner a:hover {
+  background-color: #fff;
+  color: #d84e41;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 $primaryColor: #fff;
 $secondaryColor: #41a2d8;
+$thirdColor: #d84e41;
 
 * {
     padding: 0;
@@ -119,7 +120,7 @@ html {
                 display: inline-block;
                 padding: 10px 15px;
                 color: $primaryColor;
-                background-color: #41a2d8;
+                background-color: $secondaryColor;
                 border-radius: 10px;
                 font-weight: bold;
                 transition: .3s ease-in-out;
@@ -129,7 +130,7 @@ html {
 
                 &:hover {
                     background-color: $primaryColor;
-                    color: #41a2d8;
+                    color: $secondaryColor;
                 }
             }
         }
@@ -157,5 +158,58 @@ html {
         &:nth-child(2) {
             margin-bottom: 2em;
         }
+    }
+}
+
+.how-you-can-help {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    color: $primaryColor;
+    background: url('../images/how-you-can-help.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+
+    .how-inner {
+        width: 50vw;
+        padding: 5em;
+
+            h2 {
+                font-size: 4em;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: .5em;
+            }
+    
+            p {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.15em;
+                line-height: 1.75;
+                width: 30em;
+                
+                &:nth-child(2) {
+                    margin-bottom: 2em;
+                }
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: $primaryColor;
+                background-color: $thirdColor;
+                padding: 10px 15px;
+                border-radius: 10px;
+                font-weight: bold;
+                transition: .3s ease-in-out;
+                font-size: 1.5em;
+                margin-top: 1.5em;
+                font-family: 'Poppins', sans-serif;
+
+                &:hover {
+                    background-color: $primaryColor;
+                    color: $thirdColor;
+                }
+            }
     }
 }
