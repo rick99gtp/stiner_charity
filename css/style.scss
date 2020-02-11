@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:after, *::before {
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url('../images/hero.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        padding: 20px;
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin: 0 30px;
+
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        display: block;
+                        padding: 10px;
+                        transition: .3s ease-in-out;
+                        color: white;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            margin: 0 auto;
+                            z-index: 1;
+                            background-color: white;
+                            border-left: 10px solid red;
+                        }
+                    }
+
+                    &:last-child .donate-hover {
+                        background-color: #41a2d8;
+                        border-radius: 10px;
+                        font-weight: bold;
+                        transition: .3s ease-in-out;
+
+                        &::before {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: white;
+                            color: #41a2d8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
