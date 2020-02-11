@@ -10,13 +10,18 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hero {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/hero.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  height: 120vh;
 }
 
 .hero header {
@@ -30,7 +35,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  color: white;
+  color: #fff;
   font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
   padding: 20px;
@@ -57,7 +62,7 @@
   padding: 10px;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  color: white;
+  color: #fff;
 }
 
 .hero header nav ul li a::before {
@@ -92,7 +97,84 @@
 }
 
 .hero header nav ul li:last-child .donate-hover:hover {
-  background-color: white;
+  background-color: #fff;
   color: #41a2d8;
+}
+
+.hero .hero-container {
+  width: 75vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-container .hero-text {
+  margin-top: 30px;
+}
+
+.hero .hero-container .hero-text h1 {
+  font-size: 5em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .hero-container .hero-text h2 {
+  font-size: 2em;
+  color: #fff;
+  width: 60%;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .hero-container .hero-text a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #41a2d8;
+  border-radius: 10px;
+  font-weight: bold;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  font-size: 1.5em;
+  margin-top: .5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .hero-container .hero-text a:hover {
+  background-color: #fff;
+  color: #41a2d8;
+}
+
+.our-mission {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5em;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.our-mission h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: .5em;
+}
+
+.our-mission p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15em;
+  line-height: 1.75;
+}
+
+.our-mission p:nth-child(2) {
+  margin-bottom: 2em;
 }
 /*# sourceMappingURL=style.css.map */
