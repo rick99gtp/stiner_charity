@@ -47,13 +47,17 @@
                             content: '';
                             position: absolute;
                             bottom: 0;
-                            left: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
                             height: 2px;
-                            width: 100%;
-                            margin: 0 auto;
+                            width: 0%;
                             z-index: 1;
-                            background-color: white;
-                            border-left: 10px solid red;
+                            background-color: #41a2d8;
+                            transition: .3s ease-in-out;
+                        }
+
+                        &:hover::before {
+                            width: 100%;
                         }
                     }
 

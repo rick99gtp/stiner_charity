@@ -64,13 +64,19 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   height: 2px;
-  width: 100%;
-  margin: 0 auto;
+  width: 0%;
   z-index: 1;
-  background-color: white;
-  border-left: 10px solid red;
+  background-color: #41a2d8;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hero header nav ul li a:hover::before {
+  width: 100%;
 }
 
 .hero header nav ul li:last-child .donate-hover {
