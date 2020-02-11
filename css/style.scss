@@ -213,3 +213,36 @@ html {
             }
     }
 }
+
+.donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+
+    h2 {
+        font-size: 4em;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: .5em;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: $primaryColor;
+        background-color: $secondaryColor;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: .3s ease-in-out;
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover {
+            background-color: $primaryColor;
+            color: $thirdColor;
+        }
+    }
+}
