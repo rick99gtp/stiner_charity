@@ -118,22 +118,33 @@ html {
 }
 
 .hero .hero-container .hero-text h1 {
+  position: relative;
   font-size: 5em;
   color: #fff;
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
+  -webkit-transition: .3s ease-in-out .5s;
+  transition: .3s ease-in-out .5s;
+  opacity: 0;
+  top: 20px;
 }
 
 .hero .hero-container .hero-text h2 {
+  position: relative;
   font-size: 2em;
   color: #fff;
   width: 60%;
   line-height: 1.5;
   margin-bottom: 25px;
   font-family: 'Poppins', sans-serif;
+  -webkit-transition: .3s ease-in-out .6s;
+  transition: .3s ease-in-out .6s;
+  opacity: 0;
+  top: 20px;
 }
 
 .hero .hero-container .hero-text a {
+  position: relative;
   text-decoration: none;
   display: inline-block;
   padding: 10px 15px;
@@ -146,6 +157,10 @@ html {
   font-size: 1.5em;
   margin-top: .5em;
   font-family: 'Poppins', sans-serif;
+  -webkit-transition: .3s ease-in-out .7s;
+  transition: .3s ease-in-out .7s;
+  opacity: 0;
+  top: 20px;
 }
 
 .hero .hero-container .hero-text a:hover {
@@ -162,20 +177,33 @@ html {
 }
 
 .our-mission h2 {
+  position: relative;
   font-size: 4em;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   margin-bottom: .5em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  top: 20px;
 }
 
 .our-mission p {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   font-size: 1.15em;
   line-height: 1.75;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  top: 20px;
 }
 
-.our-mission p:nth-child(2) {
-  margin-bottom: 2em;
+.our-mission p:nth-child(3) {
+  margin-top: 2em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
 }
 
 .how-you-can-help {
@@ -200,21 +228,34 @@ html {
 }
 
 .how-you-can-help .how-inner h2 {
+  position: relative;
   font-size: 4em;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   margin-bottom: .5em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  top: 20px;
 }
 
 .how-you-can-help .how-inner p {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   font-size: 1.15em;
   line-height: 1.75;
   width: 30em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  top: 20px;
 }
 
-.how-you-can-help .how-inner p:nth-child(2) {
-  margin-bottom: 2em;
+.how-you-can-help .how-inner p:nth-child(3) {
+  margin-top: 2em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
 }
 
 .how-you-can-help .how-inner a {

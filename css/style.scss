@@ -100,22 +100,31 @@ html {
         .hero-text {
             margin-top: 30px;
             h1 {
+                position: relative;
                 font-size: 5em;
                 color: $primaryColor;
                 margin-bottom: 10px;
                 font-family: 'Poppins', sans-serif;
+                transition: .3s ease-in-out .5s;
+                opacity: 0;
+                top: 20px;
             }
 
             h2 {
+                position: relative;
                 font-size: 2em;
                 color: $primaryColor;
                 width: 60%;
                 line-height: 1.5;
                 margin-bottom: 25px;
                 font-family: 'Poppins', sans-serif;
+                transition: .3s ease-in-out .6s;
+                opacity: 0;
+                top: 20px;
             }
 
             a {
+                position: relative;
                 text-decoration: none;
                 display: inline-block;
                 padding: 10px 15px;
@@ -127,6 +136,9 @@ html {
                 font-size: 1.5em;
                 margin-top: .5em;
                 font-family: 'Poppins', sans-serif;
+                transition: .3s ease-in-out .7s;
+                opacity: 0;
+                top: 20px;
 
                 &:hover {
                     background-color: $primaryColor;
@@ -144,19 +156,29 @@ html {
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 
     h2 {
+        position: relative;
         font-size: 4em;
         text-transform: uppercase;
         font-family: 'Poppins', sans-serif;
         margin-bottom: .5em;
+        transition: .3s ease-in-out;
+        opacity: 0;
+        top: 20px;
     }
 
     p {
+        position: relative;
         font-family: 'Poppins', sans-serif;
         font-size: 1.15em;
         line-height: 1.75;
-        
-        &:nth-child(2) {
-            margin-bottom: 2em;
+        transition: .3s ease-in-out;
+        opacity: 0;
+        top: 20px;
+
+        &:nth-child(3) {
+            margin-top: 2em;
+            transition: .3s ease-in-out;
+            opacity: 0;
         }
     }
 }
@@ -176,20 +198,30 @@ html {
         padding: 5em;
 
             h2 {
+                position: relative;
                 font-size: 4em;
                 text-transform: uppercase;
                 font-family: 'Poppins', sans-serif;
                 margin-bottom: .5em;
+                transition: .3s ease-in-out;
+                opacity: 0;
+                top: 20px;
             }
     
             p {
+                position: relative;
                 font-family: 'Poppins', sans-serif;
                 font-size: 1.15em;
                 line-height: 1.75;
                 width: 30em;
+                transition: .3s ease-in-out;
+                opacity: 0;
+                top: 20px;
                 
-                &:nth-child(2) {
-                    margin-bottom: 2em;
+                &:nth-child(3) {
+                    margin-top: 2em;
+                    transition: .3s ease-in-out;
+                    opacity: 0;
                 }
             }
 
