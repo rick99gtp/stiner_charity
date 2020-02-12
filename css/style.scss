@@ -278,3 +278,137 @@ html {
         }
     }
 }
+
+.footer {
+    background-color: #ddd;
+
+    .footer-inner {
+        display: flex;
+        padding: 4em 0;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+
+        .footer-left {
+
+            h3 {
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-size: 2em;
+            }
+            
+            .phone {
+                display: flex;
+                align-items: center;
+                margin: 1.2em 0;
+    
+                p {
+                    margin-left: 1em;
+                    display: inline-block;
+                    font-size: 1.5em;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+    
+            .email {
+                display: flex;
+                align-items: center;
+    
+                p {
+                    margin-left: 1em;
+                    display: inline-block;
+                    font-size: 1.5em;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+
+            .social {
+                margin-top: 1em;
+                display: flex;
+                justify-content: center;
+
+                .moveme {
+                    transition: all .2s linear;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .box {
+                    margin: 10px;
+                    overflow-y: hidden;
+                    height: 40px;
+                    width: 40px;
+                    cursor: pointer;
+                    background-color: #DDDDDD;
+                    box-shadow: 2px 2px 4px #888888, -2px -2px 4px #fff;
+                }
+                
+                .box:hover .moveme {
+                    transform: translateY(-100%);
+                }
+                
+                .box .moveme .top {
+                    line-height: 40px;
+                    text-align: center;
+                    color: rgb(70, 70, 70);
+                }
+                
+                .box .moveme .bottom {
+                    line-height: 40px;
+                    text-align: center;
+                    transition: all .3s ease-out;
+                    color: #EFF0F2;
+                }
+
+                .linkedin {
+                    background-color: #0E76A8;
+                }
+                
+                .twitter {
+                    background-color: #00acee;
+                }
+
+                .facebook {
+                    background-color: #3b5998;
+                }
+            }
+        }
+    
+        .footer-right {
+            
+            h3 {
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-size: 3em;
+            }
+
+            a {
+                position: relative;
+                text-decoration: none;
+                display: block;
+                padding: 10px 15px;
+                color: $primaryColor;
+                background-color: $secondaryColor;
+                border-radius: 10px;
+                font-weight: bold;
+                transition: .3s ease-in-out;
+                font-size: 1.5em;
+                font-family: 'Poppins', sans-serif;
+                opacity: 1;
+                text-align: center;
+                width: 30%;
+                margin: .5em auto;
+
+                &:hover {
+                    background-color: $primaryColor;
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        
+    }
+
+}
