@@ -222,6 +222,7 @@ body {
 
 .what-we-do .what-we-do-inner h3 {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .what-we-do .what-we-do-inner .what-we-do-cards {
@@ -259,6 +260,108 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.how-you-can-help {
+  background-color: #bbd3eb;
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-you-can-help .how-inner {
+  width: 55%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-you-can-help .how-inner img {
+  border-radius: 0 100px 0 100px;
+  margin-top: -180px;
+}
+
+.how-you-can-help .how-inner .how-right {
+  margin-left: 100px;
+}
+
+.how-you-can-help .how-inner .how-right h2 {
+  letter-spacing: 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #747474;
+}
+
+.how-you-can-help .how-inner .how-right h3 {
+  font-size: 50px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.how-you-can-help .how-inner .how-right p {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.how-you-can-help .how-inner .how-right a {
+  text-decoration: none;
+  background-color: #D84E41;
+  padding: 11px 20px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.contact-us .contact-us-inner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-us .contact-us-inner h2 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #747474;
+}
+
+.contact-us .contact-us-inner h3 {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.contact-us .contact-us-inner form .label-name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us .contact-us-inner form .label-name-email label {
+  width: 50%;
+}
+
+.contact-us .contact-us-inner form .input-name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-us .contact-us-inner form .input-name-email input {
+  width: 50%;
 }
 
 @-webkit-keyframes heartbeat {
