@@ -324,9 +324,22 @@ body {
   border-radius: 5px;
 }
 
+.contact-us {
+  background-color: #c5e1e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact-us .contact-us-inner {
   width: 50%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .contact-us .contact-us-inner h2 {
@@ -344,24 +357,58 @@ body {
   font-weight: bold;
 }
 
-.contact-us .contact-us-inner form .label-name-email {
+.contact-us .contact-us-inner form input[type="text"], .contact-us .contact-us-inner form input[type="email"] {
+  line-height: 40px;
+  outline: none;
+  border: none;
+  border-color: #fff;
+  font-size: 14px;
+}
+
+.contact-us .contact-us-inner form input[type="submit"] {
+  outline: none;
+  border: none;
+  background-color: #D84E41;
+  color: #fff;
+  padding: 11px 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-us .contact-us-inner form label {
+  color: #747474;
+}
+
+.contact-us .contact-us-inner form .name-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.contact-us .contact-us-inner form .label-name-email label {
-  width: 50%;
-}
-
-.contact-us .contact-us-inner form .input-name-email {
+.contact-us .contact-us-inner form .name-email .name, .contact-us .contact-us-inner form .name-email .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
 }
 
-.contact-us .contact-us-inner form .input-name-email input {
-  width: 50%;
+.contact-us .contact-us-inner form .subject input {
+  width: 100%;
+}
+
+.contact-us .contact-us-inner form .message textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-color: #fff;
+  resize: none;
 }
 
 @-webkit-keyframes heartbeat {

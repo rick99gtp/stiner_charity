@@ -110,11 +110,7 @@ body {
                             color: #fff;
                             transition: .3s ease-in-out;
                             padding: 10px 35px;
-    
-                            &::before {
-                                
-                            }
-    
+        
                             &:hover {
                                 background-color: #328ab9;
                             }
@@ -294,9 +290,14 @@ body {
 }
 
 .contact-us {
+    background-color: rgb(197, 225, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     .contact-us-inner {
         width: 50%;
-        margin: 0 auto;
+        margin: 100px auto;
 
         h2 {
             text-align: center;
@@ -314,22 +315,53 @@ body {
         }
 
         form {
-            .label-name-email {
-                display: flex;
-                label {
-                    width: 50%;
-                }
+            input[type="text"], input[type="email"] {
+                line-height: 40px;
+                outline: none;
+                border: none;
+                border-color: #fff;
+                font-size: 14px;
             }
 
-            .input-name-email {
+            input[type="submit"] {
+                outline: none;
+                border: none;
+                background-color: #D84E41;
+                color: #fff;
+                padding: 11px 20px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            label {
+                color: #747474;
+            }
+
+            .name-email {
                 display: flex;
-                input {
-                    width: 50%;
+                justify-content: space-between;
+
+                .name, .email {
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
                 }
             }
 
             .subject {
-                
+                input {
+                    width: 100%;
+                }
+            }
+
+            .message {
+                textarea {
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    border-color: #fff;
+                    resize: none;
+                }
             }
         }
     }

@@ -89,18 +89,26 @@
                 <h2>Get in touch!</h2>
                 <h3>Contact Us</h3>
                 <form>
-                    <div class="label-name-email">
-                        <label for="fname">First Name</label>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-name-email">
-                        <input name="fname" id="fname" type="text">
-                        <input name="email" id="email" type="email">
+                    <div class="name-email">
+                        <div class="name">
+                            <label for="fname">First Name</label>
+                            <input name="fname" id="fname" type="text">                        
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input name="email" id="email" type="email">
+                        </div>
                     </div>
                     <div class="subject">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject">
                     </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                    </div>
+                    <input class="submit" type="submit" value="Send a message"></input>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim. Duis fermentum faucibus est, sed vehicula velit sodales vitae.</p>
                 </form>
             </div>
             <div class="copyright">
