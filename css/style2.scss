@@ -296,7 +296,7 @@ body {
     align-items: center;
     
     .contact-us-inner {
-        width: 50%;
+        width: 45%;
         margin: 100px auto;
 
         h2 {
@@ -315,12 +315,17 @@ body {
         }
 
         form {
+            margin: 35px 0;
+
             input[type="text"], input[type="email"] {
-                line-height: 40px;
+                // line-height: 40px;
                 outline: none;
                 border: none;
                 border-color: #fff;
                 font-size: 14px;
+                margin-bottom: 12px;
+                padding: 10px;
+                font-family: 'Poppins', sans-serif;
             }
 
             input[type="submit"] {
@@ -328,9 +333,12 @@ body {
                 border: none;
                 background-color: #D84E41;
                 color: #fff;
-                padding: 11px 20px;
+                padding: 15px 30px;
                 display: block;
-                margin: 0 auto;
+                margin: 20px auto 30px auto;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 14px;
             }
 
             label {
@@ -361,6 +369,10 @@ body {
                     border: none;
                     border-color: #fff;
                     resize: none;
+                    line-height: 20px;
+                    font-size: 14px;
+                    padding: 10px;
+                    font-family: 'Poppins', sans-serif;
                 }
             }
         }

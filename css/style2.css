@@ -338,7 +338,7 @@ body {
 }
 
 .contact-us .contact-us-inner {
-  width: 50%;
+  width: 45%;
   margin: 100px auto;
 }
 
@@ -357,12 +357,18 @@ body {
   font-weight: bold;
 }
 
+.contact-us .contact-us-inner form {
+  margin: 35px 0;
+}
+
 .contact-us .contact-us-inner form input[type="text"], .contact-us .contact-us-inner form input[type="email"] {
-  line-height: 40px;
   outline: none;
   border: none;
   border-color: #fff;
   font-size: 14px;
+  margin-bottom: 12px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-us .contact-us-inner form input[type="submit"] {
@@ -370,9 +376,12 @@ body {
   border: none;
   background-color: #D84E41;
   color: #fff;
-  padding: 11px 20px;
+  padding: 15px 30px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 30px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .contact-us .contact-us-inner form label {
@@ -409,6 +418,10 @@ body {
   border: none;
   border-color: #fff;
   resize: none;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 @-webkit-keyframes heartbeat {
