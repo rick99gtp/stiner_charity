@@ -99,7 +99,7 @@ body {
                                 width: 100%;
                             }
 
-                            &.nav-highlight {
+                            &.active {
                                 color: #D87341;
                                 font-weight: bold;
                             }
@@ -193,6 +193,9 @@ body {
     .what-we-do-inner {
         text-align: center;
         margin-top: 10px;
+        opacity: 0;
+        transition: .3s ease-in-out;
+        transform: translateY(-30px);
 
         h2 {
             letter-spacing: 4px;
