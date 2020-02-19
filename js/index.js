@@ -41,7 +41,19 @@ function show_help() {
 window.addEventListener('scroll', () => {
     let offset = window.pageYOffset;
     hero.style.backgroundPositionY = offset * 0.8 + 'px';
+    let header = document.querySelector('header');
 
+    if(offset <= 100) {
+        header.style.position = 'relative';
+        header.style.opacity = 1;
+    }
+    if(offset > 100 && offset <= 200) {
+        header.style.opacity = 0;
+    }
+    if(offset > 200) {
+        header.style.position = 'fixed';
+        header.style.opacity = 1;
+    }
     if(offset >= 600) {
         show_cards();
     }

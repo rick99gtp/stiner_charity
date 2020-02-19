@@ -34,6 +34,8 @@ body {
         left: 0;
         background-color: rgba(255, 255, 255, 1);
         width: 100%;
+        z-index: 99;
+        transition: .3s ease-in-out;
     
         .header-inner {
             width: 75%;
@@ -129,6 +131,7 @@ body {
         bottom: -105px;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 1;
 
         .hero-text {
             text-align: center;
