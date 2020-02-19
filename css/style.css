@@ -238,6 +238,10 @@ body {
 .what-we-do .what-we-do-inner .what-we-do-cards .card {
   width: 200px;
   position: relative;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  outline: none;
 }
 
 .what-we-do .what-we-do-inner .what-we-do-cards .card i {
@@ -254,12 +258,25 @@ body {
   font-size: 14px;
 }
 
-.what-we-do .what-we-do-inner .what-we-do-cards .card .fa-arrow-right {
+.what-we-do .what-we-do-inner .what-we-do-cards .card .fa-long-arrow-alt-right {
   position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 10px;
+  width: 80%;
+  background-color: rgba(216, 78, 65, 0.2);
+  color: #000;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.what-we-do .what-we-do-inner .what-we-do-cards .card .fa-long-arrow-alt-right:hover {
+  color: #fff;
+  background-color: rgba(216, 78, 65, 0.7);
 }
 
 .how-you-can-help {
@@ -317,11 +334,17 @@ body {
 
 .how-you-can-help .how-inner .how-right a {
   text-decoration: none;
-  background-color: #D84E41;
+  background-color: #d84e41;
   padding: 11px 20px;
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.how-you-can-help .how-inner .how-right a:hover {
+  background-color: #a83d33;
 }
 
 .contact-us {
@@ -382,6 +405,12 @@ body {
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.contact-us .contact-us-inner form input[type="submit"]:hover {
+  background-color: #a83d33;
 }
 
 .contact-us .contact-us-inner form label {

@@ -212,6 +212,9 @@ body {
             .card {
                 width: 200px;
                 position: relative;
+                border-radius: 10px;
+                transition: all .3s ease-in-out;
+                outline: none;
 
                 i {
                     color: #a4c9cf;
@@ -227,11 +230,23 @@ body {
                     font-size: 14px;
                 }
 
-                .fa-arrow-right {
+                .fa-long-arrow-alt-right {
                     position: absolute;
                     bottom: 0;
                     left: 50%;
                     transform: translateX(-50%);
+                    transition: all .3s ease-in-out;
+                    padding: 10px;
+                    width: 80%;
+                    background-color: rgba(216, 78, 65, .2);
+                    color: #000;
+                    border-radius: 10px;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: rgba(216, 78, 65, .7);
+                    }
                 }
             }
         }
@@ -279,11 +294,16 @@ body {
 
             a {
                 text-decoration: none;
-                background-color: #D84E41;
+                background-color: rgb(216, 78, 65);;
                 padding: 11px 20px;
                 color: #fff;
                 font-size: 14px;
                 border-radius: 5px;
+                transition: background-color .3s ease-in-out;
+
+                &:hover {
+                    background-color: rgb(168, 61, 51);
+                }
             }
         }
     }
@@ -339,6 +359,11 @@ body {
                 cursor: pointer;
                 border-radius: 5px;
                 font-size: 14px;
+                transition: background-color .3s ease-in-out;
+
+                &:hover {
+                    background-color: rgb(168, 61, 51);
+                }
             }
 
             label {
