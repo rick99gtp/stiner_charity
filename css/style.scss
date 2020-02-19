@@ -34,7 +34,6 @@ body {
         left: 0;
         background-color: rgba(255, 255, 255, 1);
         width: 100%;
-        padding: 12px;
     
         .header-inner {
             width: 75%;
@@ -149,13 +148,15 @@ body {
                 text-transform: uppercase;
                 margin: 0 auto 2em auto;
                 letter-spacing: 4px;
+                opacity: 0;
+                transition: .5s ease-in-out;
             }
 
             h2 {
                 font-size: 50px;
                 color: $primaryColor;
-                transition: .3s ease-in-out .5s;
-                opacity: 1;
+                transition: .5s ease-in-out .1s;
+                opacity: 0;
                 margin: 50px 0;
                 line-height: 1.35;
             }
@@ -169,10 +170,9 @@ body {
                 background-color: $secondaryColor;
                 border-radius: 10px;
                 font-weight: bold;
-                transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out .7s;
+                transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out .2s;
                 font-size: 1.5em;
-                // transition: opacity .3s ease-in-out .7s;
-                opacity: 1;
+                opacity: 0;
                 margin-bottom: 3.1em;
 
                 &:hover {
@@ -215,6 +215,7 @@ body {
                 border-radius: 10px;
                 transition: all .3s ease-in-out;
                 outline: none;
+                opacity: 0;
 
                 i {
                     color: #a4c9cf;
@@ -267,12 +268,20 @@ body {
         align-items: center;
 
         img {
+            position: relative;
             border-radius: 0 100px 0 100px;
             margin-top: -180px;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateX(-150px);
         }
 
         .how-right {
             margin-left: 100px;
+            transition: all 1s ease-in-out;
+            transform: translateX(150px);
+            opacity: 0;
+
             h2 {
                 letter-spacing: 4px;
                 font-size: 13px;
@@ -310,10 +319,13 @@ body {
 }
 
 .contact-us {
+    position: relative;
     background-color: rgb(197, 225, 230);
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: 1s ease-in-out;
     
     .contact-us-inner {
         width: 45%;

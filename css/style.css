@@ -33,7 +33,6 @@ body {
   left: 0;
   background-color: white;
   width: 100%;
-  padding: 12px;
 }
 
 .hero header .header-inner {
@@ -171,14 +170,17 @@ body {
   text-transform: uppercase;
   margin: 0 auto 2em auto;
   letter-spacing: 4px;
+  opacity: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hero .hero-container .hero-text h2 {
   font-size: 50px;
   color: #fff;
-  -webkit-transition: .3s ease-in-out .5s;
-  transition: .3s ease-in-out .5s;
-  opacity: 1;
+  -webkit-transition: .5s ease-in-out .1s;
+  transition: .5s ease-in-out .1s;
+  opacity: 0;
   margin: 50px 0;
   line-height: 1.35;
 }
@@ -192,10 +194,10 @@ body {
   background-color: #41a2d8;
   border-radius: 10px;
   font-weight: bold;
-  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out .7s;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out .7s;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out .2s;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out .2s;
   font-size: 1.5em;
-  opacity: 1;
+  opacity: 0;
   margin-bottom: 3.1em;
 }
 
@@ -242,6 +244,7 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   outline: none;
+  opacity: 0;
 }
 
 .what-we-do .what-we-do-inner .what-we-do-cards .card i {
@@ -305,12 +308,23 @@ body {
 }
 
 .how-you-can-help .how-inner img {
+  position: relative;
   border-radius: 0 100px 0 100px;
   margin-top: -180px;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
 }
 
 .how-you-can-help .how-inner .how-right {
   margin-left: 100px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  opacity: 0;
 }
 
 .how-you-can-help .how-inner .how-right h2 {
@@ -348,6 +362,7 @@ body {
 }
 
 .contact-us {
+  position: relative;
   background-color: #c5e1e6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +373,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .contact-us .contact-us-inner {
