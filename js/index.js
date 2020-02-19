@@ -1,11 +1,9 @@
-let mission_shown = false;
-let mission_shown_2 = false;
-let mission_shown_3 = false;
-let help_shown = false;
-let help_shown_2 = false;
-let help_shown_3 = false;
-let help_shown_4 = false;
 let hero = document.querySelector('.hero');
+
+let copyright = document.querySelector('.copyright');
+let year = new Date().getFullYear();
+
+copyright.innerHTML = "Copyright &copy; " + year + " Charity Website.com. All rights reserved.";
 
 // on load show h1, h2 and button
 show_hero();

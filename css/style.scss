@@ -422,6 +422,10 @@ body {
     }
 }
 
+.copyright {
+    text-align: center;
+}
+
 @keyframes heartbeat {
     50% {
         transform: translateY(-50%) scale(1);

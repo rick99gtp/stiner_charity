@@ -480,6 +480,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.copyright {
+  text-align: center;
+}
+
 @-webkit-keyframes heartbeat {
   50% {
     -webkit-transform: translateY(-50%) scale(1);
