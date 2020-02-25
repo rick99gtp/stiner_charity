@@ -309,7 +309,7 @@ body {
 
             a {
                 text-decoration: none;
-                background-color: rgb(216, 78, 65);;
+                background-color: rgb(216, 78, 65);
                 padding: 11px 20px;
                 color: #fff;
                 font-size: 14px;
@@ -326,7 +326,7 @@ body {
 
 .contact-us {
     position: relative;
-    background-color: rgb(197, 225, 230);
+    background-color: rgb(157, 179, 201);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,6 +364,7 @@ body {
                 margin-bottom: 12px;
                 padding: 10px;
                 font-family: 'Poppins', sans-serif;
+                border-radius: 5px;
             }
 
             input[type="submit"] {
@@ -411,6 +412,7 @@ body {
                     outline: none;
                     border: none;
                     border-color: #fff;
+                    border-radius: 5px;
                     resize: none;
                     line-height: 20px;
                     font-size: 14px;

@@ -372,7 +372,7 @@ body {
 
 .contact-us {
   position: relative;
-  background-color: #c5e1e6;
+  background-color: #9db3c9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +419,7 @@ body {
   margin-bottom: 12px;
   padding: 10px;
   font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
 }
 
 .contact-us .contact-us-inner form input[type="submit"] {
@@ -473,6 +474,7 @@ body {
   outline: none;
   border: none;
   border-color: #fff;
+  border-radius: 5px;
   resize: none;
   line-height: 20px;
   font-size: 14px;
