@@ -76,7 +76,7 @@ window.addEventListener('scroll', () => {
     if(offset >= 600) {
         show_cards();
     }
-    if(offset >= 1100) {
+    if(offset >= 900) {
         let help_img = document.querySelector('.how-inner img');
         let help_right = document.querySelector('.how-inner .how-right');
 
