@@ -270,27 +270,6 @@ body {
   font-size: 14px;
 }
 
-.what-we-do .what-we-do-inner .what-we-do-cards .card .fa-long-arrow-alt-right {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  padding: 10px;
-  width: 80%;
-  background-color: rgba(216, 78, 65, 0.2);
-  color: #000;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.what-we-do .what-we-do-inner .what-we-do-cards .card .fa-long-arrow-alt-right:hover {
-  color: #fff;
-  background-color: rgba(216, 78, 65, 0.7);
-}
-
 .how-you-can-help {
   background-color: #bbd3eb;
   height: 55vh;
