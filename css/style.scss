@@ -8,7 +8,9 @@ $thirdColor: #d84e41;
     box-sizing: border-box;
 }
 
-*:after, *::before {
+*::after, *::before {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -213,7 +215,6 @@ body {
             display: flex;
             justify-content: space-around;
             margin-top: 50px;
-            height: 30vh;
 
             .card {
                 width: 200px;
@@ -437,5 +438,157 @@ body {
 
     100% {
         transform: translateY(-50%) scale(1);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .hero {
+        background-position: 56%;
+        background-size: 250% 100%;
+
+        header {
+
+            .header-inner {
+                padding: 10px;
+                nav {
+                    display: none;
+                }
+            }
+        }
+
+        .hero-container {
+            width: 90vw;
+            border-radius: 15px;
+            bottom: -105px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+    
+            .hero-text {
+        
+                h1 {
+                    font-size: 10px;
+                    margin: 0 auto 0em auto;
+                    opacity: 1;
+                    transition: .5s ease-in-out;
+                }
+    
+                h2 {
+                    font-size: 30px;
+                    margin: 20px 0;
+                    opacity: 1;
+                }
+    
+                a {
+                    font-size: 1em;
+                    opacity: 1;
+                }
+            }
+        }
+
+        
+    }
+
+    .what-we-do {
+        margin: 0px auto;
+        width: 100%;
+    
+        .what-we-do-inner {
+            margin-top: 10px;
+            transform: translateY(0px);
+    
+            h3 {
+                font-size: 30px;
+            }
+    
+            .what-we-do-cards {
+                display: block;
+                margin-top: 100px;
+    
+                .card {
+                    width: 100%;
+                    border-radius: 0px;
+                    opacity: 1;
+                    margin-bottom: 50px;
+    
+                    i {
+                        position: relative;
+                        font-size: 125px;
+                    }
+    
+                    h4 {
+                        font-size: 20px;
+                        margin: 20px auto;
+                        width: 100%;
+                    }
+    
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .how-you-can-help {
+        height: 100%;
+        display: block;
+        justify-content: none;
+        align-items: none;
+
+        .how-inner {
+            width: 100%;
+            margin: 0;
+            display: block;
+            border-radius: 0 0px 0 0px;
+            margin-top: 0px;
+            opacity: 1;
+            transform: translateX(0px);
+    
+            img {
+                position: relative;
+                border-radius: 0 0px 0 0px;
+                margin-top: 0px;
+                opacity: 1;
+                transition: all 1s ease-in-out;
+                transform: translateX(0px);
+                width: 100%;
+            }
+    
+            .how-right {
+                margin-left: 0px;
+                transform: translateX(0px);
+                opacity: 1;
+    
+                h2 {
+                    font-size: 13px;
+                }
+    
+                h3 {
+                    font-size: 50px;
+                    margin: 10px 0;
+                }
+    
+                p {
+                    margin-bottom: 50px;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+    
+                a {
+                    text-decoration: none;
+                    background-color: rgb(216, 78, 65);
+                    padding: 11px 20px;
+                    color: #fff;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    transition: background-color .3s ease-in-out;
+    
+                    &:hover {
+                        background-color: rgb(168, 61, 51);
+                    }
+                }
+            }
+        }
     }
 }

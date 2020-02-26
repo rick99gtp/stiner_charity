@@ -5,7 +5,9 @@
           box-sizing: border-box;
 }
 
-*:after, *::before {
+*::after, *::before {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -243,7 +245,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 50px;
-  height: 30vh;
 }
 
 .what-we-do .what-we-do-inner .what-we-do-cards .card {
@@ -525,6 +526,140 @@ body {
   100% {
     -webkit-transform: translateY(-50%) scale(1);
             transform: translateY(-50%) scale(1);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero {
+    background-position: 56%;
+    background-size: 250% 100%;
+  }
+  .hero header .header-inner {
+    padding: 10px;
+  }
+  .hero header .header-inner nav {
+    display: none;
+  }
+  .hero .hero-container {
+    width: 90vw;
+    border-radius: 15px;
+    bottom: -105px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 1;
+  }
+  .hero .hero-container .hero-text h1 {
+    font-size: 10px;
+    margin: 0 auto 0em auto;
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  .hero .hero-container .hero-text h2 {
+    font-size: 30px;
+    margin: 20px 0;
+    opacity: 1;
+  }
+  .hero .hero-container .hero-text a {
+    font-size: 1em;
+    opacity: 1;
+  }
+  .what-we-do {
+    margin: 0px auto;
+    width: 100%;
+  }
+  .what-we-do .what-we-do-inner {
+    margin-top: 10px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .what-we-do .what-we-do-inner h3 {
+    font-size: 30px;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards {
+    display: block;
+    margin-top: 100px;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card {
+    width: 100%;
+    border-radius: 0px;
+    opacity: 1;
+    margin-bottom: 50px;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card i {
+    position: relative;
+    font-size: 125px;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card h4 {
+    font-size: 20px;
+    margin: 20px auto;
+    width: 100%;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card p {
+    font-size: 15px;
+  }
+  .how-you-can-help {
+    height: 100%;
+    display: block;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+  }
+  .how-you-can-help .how-inner {
+    width: 100%;
+    margin: 0;
+    display: block;
+    border-radius: 0 0px 0 0px;
+    margin-top: 0px;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .how-you-can-help .how-inner img {
+    position: relative;
+    border-radius: 0 0px 0 0px;
+    margin-top: 0px;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 100%;
+  }
+  .how-you-can-help .how-inner .how-right {
+    margin-left: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  .how-you-can-help .how-inner .how-right h2 {
+    font-size: 13px;
+  }
+  .how-you-can-help .how-inner .how-right h3 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  .how-you-can-help .how-inner .how-right p {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .how-you-can-help .how-inner .how-right a {
+    text-decoration: none;
+    background-color: #d84e41;
+    padding: 11px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+  }
+  .how-you-can-help .how-inner .how-right a:hover {
+    background-color: #a83d33;
   }
 }
 /*# sourceMappingURL=style.css.map */
