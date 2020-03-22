@@ -631,31 +631,33 @@ body {
   .how-you-can-help .how-inner img {
     position: relative;
     border-radius: 0 0px 0 0px;
-    margin: 40px auto 30px auto;
+    margin: 40px 10% 30px 10%;
     opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    width: 75%;
+    width: 80%;
   }
   .how-you-can-help .how-inner .how-right {
-    margin-left: 0px;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    opacity: 0;
   }
   .how-you-can-help .how-inner .how-right h2 {
     font-size: 13px;
+    text-align: center;
   }
   .how-you-can-help .how-inner .how-right h3 {
-    font-size: 50px;
+    font-size: 30px;
     margin: 10px 0;
+    text-align: center;
   }
   .how-you-can-help .how-inner .how-right p {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 26px;
+    text-align: justify;
   }
   .how-you-can-help .how-inner .how-right a {
     text-decoration: none;

@@ -494,7 +494,6 @@ body {
             }
         }
 
-        
     }
 
     .what-we-do {
@@ -556,31 +555,36 @@ body {
             img {
                 position: relative;
                 border-radius: 0 0px 0 0px;
-                margin: 40px auto 30px auto;
+                margin: 40px 10% 30px 10%;
                 opacity: 1;
                 transition: all 1s ease-in-out;
                 transform: translateX(0px);
-                width: 75%;
+                width: 80%;
             }
     
             .how-right {
-                margin-left: 0px;
-                transform: translateX(0px);
-                opacity: 1;
+                // margin-left: 100px;
+                transition: all 1s ease-in-out;
+                // transform: translateX(50%);
+                opacity: 0;
+                
     
                 h2 {
                     font-size: 13px;
+                    text-align: center;
                 }
     
                 h3 {
-                    font-size: 50px;
+                    font-size: 30px;
                     margin: 10px 0;
+                    text-align: center;
                 }
     
                 p {
                     margin-bottom: 50px;
                     font-size: 14px;
                     line-height: 26px;
+                    text-align: justify;
                 }
     
                 a {
