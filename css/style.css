@@ -757,4 +757,63 @@ body {
     padding: 10px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-position: 56%;
+    background-size: 250% 100%;
+  }
+  .hero header .header-inner {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 10px;
+  }
+  .hero header .header-inner nav {
+    width: 75%;
+  }
+  .hero header .header-inner nav ul li a {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .hero .hero-container {
+    width: 80vw;
+  }
+  .hero .hero-container .hero-text i {
+    position: relative;
+    top: -50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #D84E41;
+    -webkit-animation: heartbeat 2.5s infinite;
+            animation: heartbeat 2.5s infinite;
+  }
+  .what-we-do {
+    margin: 140px auto;
+    width: 100%;
+  }
+  .what-we-do .what-we-do-inner {
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards {
+    margin-top: 40px;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card i {
+    color: #a4c9cf;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card h4 {
+    font-size: 18px;
+    margin: 20px auto;
+    width: 80%;
+    height: 30%;
+  }
+  .what-we-do .what-we-do-inner .what-we-do-cards .card p {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
