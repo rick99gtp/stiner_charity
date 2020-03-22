@@ -617,6 +617,7 @@ body {
     -webkit-box-align: none;
         -ms-flex-align: none;
             align-items: none;
+    padding-bottom: 90px;
   }
   .how-you-can-help .how-inner {
     width: 100%;
@@ -654,12 +655,13 @@ body {
     text-align: center;
   }
   .how-you-can-help .how-inner .how-right p {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 26px;
     text-align: justify;
   }
   .how-you-can-help .how-inner .how-right a {
+    display: block;
     text-decoration: none;
     background-color: #d84e41;
     padding: 11px 20px;
@@ -668,9 +670,109 @@ body {
     border-radius: 5px;
     -webkit-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
+    text-align: center;
   }
   .how-you-can-help .how-inner .how-right a:hover {
     background-color: #a83d33;
+  }
+  .contact-us {
+    position: relative;
+    background-color: #9db3c9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .contact-us .contact-us-inner {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .contact-us .contact-us-inner h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #747474;
+  }
+  .contact-us .contact-us-inner h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .contact-us .contact-us-inner form {
+    margin: 35px 0;
+  }
+  .contact-us .contact-us-inner form input[type="text"], .contact-us .contact-us-inner form input[type="email"] {
+    outline: none;
+    border: none;
+    border-color: #fff;
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  .contact-us .contact-us-inner form input[type="submit"] {
+    outline: none;
+    border: none;
+    background-color: #D84E41;
+    color: #fff;
+    padding: 15px 30px;
+    display: block;
+    margin: 20px auto 30px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+  }
+  .contact-us .contact-us-inner form input[type="submit"]:hover {
+    background-color: #a83d33;
+  }
+  .contact-us .contact-us-inner form label {
+    color: #747474;
+  }
+  .contact-us .contact-us-inner form .name-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-us .contact-us-inner form .name-email .name, .contact-us .contact-us-inner form .name-email .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 49%;
+  }
+  .contact-us .contact-us-inner form .subject input {
+    width: 100%;
+  }
+  .contact-us .contact-us-inner form .message textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-color: #fff;
+    border-radius: 5px;
+    resize: none;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -542,6 +542,7 @@ body {
         display: block;
         justify-content: none;
         align-items: none;
+        padding-bottom: 90px;
 
         .how-inner {
             width: 100%;
@@ -567,7 +568,6 @@ body {
                 transition: all 1s ease-in-out;
                 // transform: translateX(50%);
                 opacity: 0;
-                
     
                 h2 {
                     font-size: 13px;
@@ -581,13 +581,14 @@ body {
                 }
     
                 p {
-                    margin-bottom: 50px;
+                    margin-bottom: 20px;
                     font-size: 14px;
                     line-height: 26px;
                     text-align: justify;
                 }
     
                 a {
+                    display: block;
                     text-decoration: none;
                     background-color: rgb(216, 78, 65);
                     padding: 11px 20px;
@@ -595,9 +596,110 @@ body {
                     font-size: 14px;
                     border-radius: 5px;
                     transition: background-color .3s ease-in-out;
+                    text-align: center;
     
                     &:hover {
                         background-color: rgb(168, 61, 51);
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-us {
+        position: relative;
+        background-color: rgb(157, 179, 201);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 1s ease-in-out;
+
+        .contact-us-inner {
+            width: 100%;
+            margin: 40px auto;
+    
+            h2 {
+                text-align: center;
+                letter-spacing: 4px;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #747474;
+            }
+    
+            h3 {
+                text-align: center;
+                font-size: 30px;
+                margin: 10px 0;
+                font-weight: bold;
+            }
+    
+            form {
+                margin: 35px 0;
+    
+                input[type="text"], input[type="email"] {
+                    // line-height: 40px;
+                    outline: none;
+                    border: none;
+                    border-color: #fff;
+                    font-size: 14px;
+                    margin-bottom: 12px;
+                    padding: 10px;
+                    font-family: 'Poppins', sans-serif;
+                    border-radius: 5px;
+                }
+    
+                input[type="submit"] {
+                    outline: none;
+                    border: none;
+                    background-color: #D84E41;
+                    color: #fff;
+                    padding: 15px 30px;
+                    display: block;
+                    margin: 20px auto 30px auto;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    transition: background-color .3s ease-in-out;
+    
+                    &:hover {
+                        background-color: rgb(168, 61, 51);
+                    }
+                }
+    
+                label {
+                    color: #747474;
+                }
+    
+                .name-email {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .name, .email {
+                        display: flex;
+                        flex-direction: column;
+                        width: 49%;
+                    }
+                }
+    
+                .subject {
+                    input {
+                        width: 100%;
+                    }
+                }
+    
+                .message {
+                    textarea {
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        border-color: #fff;
+                        border-radius: 5px;
+                        resize: none;
+                        line-height: 20px;
+                        font-size: 14px;
+                        padding: 10px;
+                        font-family: 'Poppins', sans-serif;
                     }
                 }
             }
