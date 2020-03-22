@@ -695,7 +695,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 681px) {
     .hero {
         background-position: 56%;
         background-size: 250% 100%;
@@ -773,5 +773,135 @@ body {
             }
         }
     }
+    .how-you-can-help {
+        background-color: rgb(187, 211, 235);
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     
+        .how-inner {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+    
+            img {
+                width: 50%;
+                position: relative;
+                border-radius: 0 100px 0 100px;
+                margin-top: 0px;
+                margin-left: 20px;
+                opacity: 0;
+                transition: all 1s ease-in-out;
+                transform: translateX(-150px);
+            }
+    
+            .how-right {
+                margin-left: 100px;
+                transition: all 1s ease-in-out;
+                transform: translateX(150px);
+                opacity: 0;
+            }
+        }
+    }
+
+    .contact-us {
+
+        .contact-us-inner {
+            width: 90%;
+            margin: 50px auto 0px auto;
+
+            h2 {
+                text-align: center;
+                letter-spacing: 4px;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #747474;
+            }
+    
+            h3 {
+                text-align: center;
+                font-size: 50px;
+                margin: 10px 0;
+                font-weight: bold;
+            }
+    
+            form {
+                margin: 35px 0;
+    
+                input[type="text"], input[type="email"] {
+                    // line-height: 40px;
+                    outline: none;
+                    border: none;
+                    border-color: #fff;
+                    font-size: 14px;
+                    margin-bottom: 12px;
+                    padding: 10px;
+                    font-family: 'Poppins', sans-serif;
+                    border-radius: 5px;
+                }
+    
+                input[type="submit"] {
+                    outline: none;
+                    border: none;
+                    background-color: #D84E41;
+                    color: #fff;
+                    padding: 15px 30px;
+                    display: block;
+                    margin: 20px auto 30px auto;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    transition: background-color .3s ease-in-out;
+    
+                    &:hover {
+                        background-color: rgb(168, 61, 51);
+                    }
+                }
+    
+                label {
+                    color: #747474;
+                }
+    
+                .name-email {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .name, .email {
+                        display: flex;
+                        flex-direction: column;
+                        width: 49%;
+                    }
+                }
+    
+                .subject {
+                    input {
+                        width: 100%;
+                    }
+                }
+    
+                .message {
+                    textarea {
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        border-color: #fff;
+                        border-radius: 5px;
+                        resize: none;
+                        line-height: 20px;
+                        font-size: 14px;
+                        padding: 10px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
 }
