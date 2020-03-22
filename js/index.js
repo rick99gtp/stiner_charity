@@ -94,7 +94,17 @@ window.addEventListener('scroll', () => {
     if(offset >= 1700) {
         let contact_us = document.querySelector('.contact-us');
         contact_us.style.opacity = 1;
-        contact_us.style.transform = 'translateY(-50px)';
+
+        let mql = window.matchMedia("screen and (maxwidth: 680px)");
+        mql.addListener(function(e) {
+            if(e.matches) {
+                contact_us.style.transform = 'translateY(-50px)';
+            }
+            else {
+                
+                contact_us.style.transform = 'translateY(0px)';
+            }
+        });
 
         resetNavLinks();
 

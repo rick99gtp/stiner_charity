@@ -689,20 +689,25 @@ body {
     opacity: 0;
     -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
+    padding-bottom: 30px;
   }
   .contact-us .contact-us-inner {
     width: 90%;
-    margin: 40px auto;
+    margin: 0 auto;
     padding-top: 20px;
   }
   .contact-us .contact-us-inner h3 {
     font-size: 30px;
+  }
+  .contact-us .contact-us-inner form {
+    margin: 0;
   }
   .contact-us .contact-us-inner form input[type="text"], .contact-us .contact-us-inner form input[type="email"] {
     width: 100%;
   }
   .contact-us .contact-us-inner form input[type="submit"] {
     width: 75%;
+    margin: 10px auto 20px auto;
   }
   .contact-us .contact-us-inner form input[type="submit"]:hover {
     background-color: #a83d33;
@@ -748,8 +753,8 @@ body {
     margin: 0 auto;
   }
   .copyright {
-    text-align: center;
-    font-size: 14px;
+    font-size: 10px;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
