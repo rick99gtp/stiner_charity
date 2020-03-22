@@ -534,6 +534,15 @@ body {
     background-position: 56%;
     background-size: 250% 100%;
   }
+  .hero header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   .hero header .header-inner {
     padding: 10px;
   }
@@ -622,13 +631,13 @@ body {
   .how-you-can-help .how-inner img {
     position: relative;
     border-radius: 0 0px 0 0px;
-    margin-top: 0px;
+    margin: 40px auto 30px auto;
     opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    width: 100%;
+    width: 75%;
   }
   .how-you-can-help .how-inner .how-right {
     margin-left: 0px;
